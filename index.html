@@ -3,19 +3,24 @@
 <head>
     <title>HBD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<link href="TheLightFont.ttf" rel="stylesheet">
-	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="TheLightFont.ttf" rel="stylesheet">
+   
 </head>
 
 <body class="col-md-6 col-lg-12 col-sm-12 col-xs-12">
+    <audio id="audio" controls autoplay>
+        <source src="BgHappy.mp3" type="audio/mpeg">
+      </audio>
     <h1>Happy Birthday</h1>
     <img class="img-responsive" id="album" src="purna">
     <h2 class="col-md-9 col-lg-12 col-sm-12 col-xs-12" id="name">Thank You Ma'am For Teaching us.</h2>
     <div> <button class="col-md-9 col-lg-12 col-sm-12 col-xs-12 btn-info" onclick="nextslide()">Next</button>
 
         <script>
+           function myFunction() {
+  var x = document.getElementById("audio").autoplay;}
             var images = [
                 "purna",
                 "1.jpeg",
@@ -29,7 +34,7 @@
                 "I wish you a fulfilling life and many more years of joy, happiness, and success as you spread your knowledge.",
                 "Birthdays bring new joy, new discovery, and new hope—just like teachers!",
                 "A teacher affects eternity; he/she can never tell where his/her influence stops.",
-                "Thank You for making us learn SS easily "
+                "Thank You for making us learn SS easily."
             ];
 
             var i = 0;
@@ -47,14 +52,15 @@
         </script>
         <style>
             @font-face {
-    font-family: 'the light font';
-    src: url("TheLightFont.ttf");
-}
+                font-family: 'the light font';
+                src: url("TheLightFont.ttf");
+            }
 
-@font-face {
-    font-family: 'handlee';
-    src: url("Handlee-Regular.ttf");
-}
+            @font-face {
+                font-family: 'handlee';
+                src: url("Handlee-Regular.ttf");
+            }
+
             #album {
                 height: 360 !important;
                 width: 380 !important;
@@ -62,24 +68,25 @@
 
             body {
                 text-align: center !important;
-                background-image: url("HBD\ BG.jpg")!important;
-                background-position: center !important;  
+                background-image: url("HBD\ BG.jpg") !important;
+                background-position: center !important;
             }
 
             h1 {
                 color: paleturquoise !important;
                 font-size: 100 !important;
-                font-family:the light font;
+                font-family: the light font;
                 font-weight: lighter;
             }
 
             h2 {
-                color: rgb(59, 255, 255)!important;
+                color: rgb(59, 255, 255) !important;
                 font-size: 90 !important;
                 font-family: handlee;
                 font-weight: lighter;
             }
-            button{
+
+            button {
                 font-size: 75 !important;
                 background-color: #5bc0de !important;
                 color: whitesmoke !important;
